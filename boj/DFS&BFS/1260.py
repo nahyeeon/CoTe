@@ -1,7 +1,7 @@
 import sys
 from collections import deque
 
-def dfs(start, graph, visited):
+def dfs(start, graph, visited): # DFS(queue) push ( pop * print push )  #print전에 visited
     stack = deque()
     
     stack.append(start)
@@ -15,7 +15,8 @@ def dfs(start, graph, visited):
         for next_v in graph[now_v][::-1]:
             stack.append(next_v)
 
-def bfs(start, graph, bfs_visited):
+def bfs(start, graph, bfs_visited): # BFS(stack) * push ( pop print * push ) #push전에 visited
+
     queue = deque()
     
     bfs_visited[start] = True
@@ -52,5 +53,5 @@ bfs_visited = [False] * (v+1)
 
 
 dfs(start, graph, visited)
-print()
+print()  # 줄 띄워주기용
 bfs(start, graph, bfs_visited)

@@ -1,4 +1,16 @@
-node, 간선
+# node(점), vertex(선), graph
 
-연결리스트
-행렬
+# 연결리스트
+# 행렬
+
+# 양방향 = 무방향 (조건에서 따져볼 것, 단뱡향인지 양방향인지)
+ex) 입력으로 주어지는 간선은 양방향이다.
+
+# 기본적인 순서 push(시작) -> pop -> print
+
+*visited
+DFS(queue)  push ( pop * print push )  # print전에 visited
+BFS(stack)  * push ( pop print * push )  # push전에 visited
+
+# graph[1][::-1]
+ex) [2, 3, 4] -> [4, 3, 2]
