@@ -16,7 +16,7 @@ print(a_dict["a"])
 # 탐색2
 print(a_dict.get("a"))
 print(a_dict.get("b"))
-# 탐색할떄는 get로 쓸것
+# 탐색할떄는 get로 쓸것!!
 
 a_dict["b"] = 2
 

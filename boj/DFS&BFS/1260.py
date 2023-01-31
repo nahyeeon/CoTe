@@ -39,6 +39,9 @@ v, e, start = map(int, input().split())
 graph = []
 for _ in range(v+1):
     graph.append([])
+
+# graph = [[] for _ in range(v+1)] # 깊은 복사/ 얕은 복사
+
     
 for _ in range(e):
     a, b = map(int, input().split())
