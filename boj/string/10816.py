@@ -1,5 +1,3 @@
-# 딕셔너리로 풀어보기
-
 import sys
 input = sys.stdin.readline
 
@@ -69,3 +67,48 @@ for target in candidate:
         print(0, end=" ")
     else:
         print(result, end=" ")
+        
+
+# 딕셔너리로 풀어보기
+n = int(input())
+arr1 = list(map(int, input().split()))
+
+dict1 = dict()
+# 숫자카드와 개수를 딕셔너리에 담기
+for i in arr1:
+    if i in dict1:
+        dict1[i] += 1
+    else:
+        dict1[i] = 1
+
+
+m = int(input())
+arr2 = list(map(int, input().split()))
+
+for i in arr2:
+    if i in dict1:
+        print(dict1[i], end=' ')    # 존재하는 숫자 카드라면
+    else:
+        print(0, end=' ')           # 존재하지 않는 숫자 카드라면
+        
+# 내코드로 만들기
+import sys
+input = sys.stdin.readline
+n = int(input())
+cards = list(map(int, input().split()))
+dic = dict()
+
+for i in cards:
+    if i in dic:
+        dic[i] += 1
+    else:
+        dic[i] = 1
+        
+m = int(input())
+card = list(map(int, input().split()))
+
+for i in card:
+    if i in dic:
+        print(dic[i], end=" ")
+    else:
+        print(0, end=" ")
