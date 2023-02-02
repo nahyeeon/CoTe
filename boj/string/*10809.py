@@ -12,7 +12,7 @@ for i in range(len(word)):
         
 for answer in answers:
     print(answer , end=" ")
-    
+
 # 선생님 코드
 import sys
 input = sys.stdin.readline

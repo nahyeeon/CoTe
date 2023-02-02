@@ -40,8 +40,9 @@ def binary_search(lans, target, left, right):
     return right
 
 k, target = map(int, input().split())
-lans = [input() for _ in range(k)]
+lans = [int(input()) for _ in range(k)]
 
 left , right = 1, max(lans)
 
 print(binary_search(lans, target, left, right))
+

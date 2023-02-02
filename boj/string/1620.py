@@ -11,7 +11,7 @@ for i in range(1, n + 1):
 
 for _ in range(m):
     quest = input().rstrip()
-    if x.isdigit():
+    if pokemon.isdigit():
         print(id[int(quest)])
     else:
         print(name[quest])
