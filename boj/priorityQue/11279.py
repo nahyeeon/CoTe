@@ -16,4 +16,3 @@ for _ in range(n):
         else:
             priority, data = heappop(pq)
             print(data)
-            

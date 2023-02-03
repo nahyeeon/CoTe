@@ -66,4 +66,3 @@ for i in range(1, n+1):
     visited = [False] * (v+1)
     result.append(bfs(graph,i))
     
-print(result.index(min(result[1:])))
