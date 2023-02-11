@@ -13,6 +13,8 @@ def dfs(start, graph, visited): # DFS(queue) push ( pop * print push )  #print�
         visited[now_v] = True
         print(now_v, end=" ")
         for next_v in graph[now_v][::-1]:
+            # if visited[next_v]: # 이미 방문한 곳은 지남
+            #     continue
             stack.append(next_v)
 
 def bfs(start, graph, bfs_visited): # BFS(stack) * push ( pop print * push ) #push전에 visited

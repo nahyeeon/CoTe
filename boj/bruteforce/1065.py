@@ -20,19 +20,17 @@ input = sys.stdin.readline
 
 N = int(input())
 
-def is_hansoo(x):
-    if x < 100:
-        return True
-    if x == 1000:
-        return False
-    str_x = str(x)
-    if int(str_x[0]) - int(str_x[1]) == int(str_x[1]) - int(str_x[2]):
-        return True
-    return False
+cnt = 0
 
-count = 0
-for i in range(1, N + 1):
-    if is_hansoo(i):
-        count += 1
+for x in range(1,n+1):
+    if x <= 99:
+        cnt += 1
+    elif x == 1000:
+        pass
+    else:
+        str_x = str(x)
+        if int(str_x[0]) - int(str_x[1]) == int(str_x[1]) - int(str_x[2]):
+            cnt += 1
+            
 
-print(count)
+print(cnt)
