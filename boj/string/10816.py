@@ -112,3 +112,17 @@ for i in card:
         print(dic[i], end=" ")
     else:
         print(0, end=" ")
+        
+        
+from collections import Counter
+
+n = int(input())
+cards = list(map(int, input().split()))
+m = int(input())
+keys = list(map(int, input().split()))
+
+card_counter = Counter(cards)
+i = 0
+while i < m:
+    print(card_counter[i])
+    i += 1
